@@ -1,5 +1,9 @@
 name: Test CI/CD Test
 
+env:
+ aplications_name: Testing
+ local_mode: ${{ github.sha }} 
+
 on: 
    push:
      branches: 
