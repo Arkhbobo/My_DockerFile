@@ -6,8 +6,15 @@ on:
      - main
 
 jobs:
- my_test: 
+ my_test1: 
   runs-on: ubuntu-latest
   steps:
   - name: Print create new .txt File
-    run: echo "Create new file for testing"  
+    run: echo "Create new file for testing" 
+
+ my_test2: 
+  runs-on: ubuntu-latest
+  needs: [my_test1]
+  steps:
+   - name: Print Create second .txt File
+     run: echo "This is second test file"
