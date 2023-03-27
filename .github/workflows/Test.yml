@@ -1,0 +1,14 @@
+name: Test CI/CD Test
+
+on: 
+   push:
+     branches: 
+     - main
+
+jobs:
+ my_test: 
+  runs-on: ubuntu-latest
+  
+ steps:
+  - name: Create new .txt File
+    run: echo "Create new file for testing"    
