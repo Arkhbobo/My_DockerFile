@@ -9,5 +9,5 @@ jobs:
  my_test: 
   runs-on: ubuntu-latest
   steps:
-  - name: Print: create new .txt File
+  - name: Print create new .txt File
     run: echo "Create new file for testing"  
